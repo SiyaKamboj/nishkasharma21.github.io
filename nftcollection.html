@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Stylesheet" href="NFT.css"/>
+<style>
+
+.colorbg{
+background-color: rbg(50, 56, 67);
+}
+.fade-in-text {
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+  color: black;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 200px;
+  text-align: center;
+  /*background: #1abc9c;*/
+  background-image: url("background.jpeg");
+  color: black;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px dashed white;
+  align-items:  center;
+  
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #282F3D;
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  
+  /*background-color: #333;*/
+  background-color: #282F3D;
+  position: absolute;
+  top:0px;
+  width:100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: #333;
+  color: white;
+}
+</style>
+</head>
+
+<body class= "colorbg" onload='read("Animals"); read("Climate"); read("Food"); read("Other");'>
+
+
+<div class="topnav">
+  <a href="nftcollection.html">NFT Collection</a>
+  <a href="uploadnft.html">Upload NFT</a>
+  <a href="nftcauses.html">NFT Causes</a>
+</div>
+
+
+<div class="header">
+    <h1>NFT Collection</h1>
+    <p>What our NFTs are about...</p>
+  </div>
+  
+  <div class="content" id="animalContent">
+    <h1>Here is the Animal's NFT </h1>
+    <div id="divToAppend" style="overflow: hidden;display: flex; flex-wrap: wrap; background-color:grey; max-width:625px; max-height:500px;"></div>
+  </div>
+
+  <div class="content" id="climateContent">
+    <h1>Here is the Climate's NFT</h1>
+    <div id="divToAppendClimate" style="overflow: hidden;display: flex; flex-wrap: wrap; background-color:grey; max-width:625px; max-height:500px;" ></div>
+  </div>
+
+  <div class="content">
+    <h1>Here is the Food's NFT</h1>
+    <div id="divToAppendFood" style="overflow: hidden;display: flex; flex-wrap: wrap; background-color:grey; max-width:625px; max-height:500px;" ></div>
+  </div>
+
+  <div class="content">
+    <h1>Here is the Miscellaneous NFT</h1>
+    <div id="divToAppendOther" style="overflow: hidden;display: flex; flex-wrap: wrap; background-color:grey; max-width:625px; max-height:500px;" ></div>
+  </div>
+<div style="padding-left:16px">
+
+</div>
+
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+  <script src="readFirebase.js"></script>
+
+</html>
