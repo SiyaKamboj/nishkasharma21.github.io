@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyC1CbFa6LBLPDVkCyE3ZtUqhR6U8tryo94",
-  authDomain: "lancerhacks4.firebaseapp.com",
-  projectId: "lancerhacks4",
-  storageBucket: "lancerhacks4.appspot.com",
-  messagingSenderId: "943030832844",
-  appId: "1:943030832844:web:5a91260eba756617957c69",
-  measurementId: "G-KQKW0XTFP9"
+  apiKey: "AIzaSyDGqssriWlEBfpEiuAx5wqmZefYi6e0t_0",
+  authDomain: "lancerhacks-rl.firebaseapp.com",
+  projectId: "lancerhacks-rl",
+  storageBucket: "lancerhacks-rl.appspot.com",
+  messagingSenderId: "187786374571",
+  appId: "1:187786374571:web:647870cac99df8cb4436ee",
+  measurementId: "G-LFF92JQN2P"
 };
 
 firebase.initializeApp(firebaseConfig);
